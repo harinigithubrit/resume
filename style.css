@@ -1,0 +1,212 @@
+html {
+    overflow-y: scroll;
+  }
+  
+  body {
+    font-family: "Oswald", sans-serif; // original font bebas neue?
+    font-size: 8vw;
+  }
+  
+  .hero {
+    align-items: center;
+    //background: url(<img src="https://thewritelife.com/wp-content/uploads/2019/07/portfolio-websites.jpg" id="img" style="width: 494px; height: 330px;">          ) no-repeat center center fixed;
+    // background: url("https://thewritelife.com/wp-content/uploads/2019/07/portfolio-websites.jpg" ) no-repeat center center fixed;
+    background: url("https://thewritelife.com/wp-content/uploads/2019/07/portfolio-websites.jpg" ) no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    min-height: 500px;
+    outline: 1px solid white;
+    outline-offset: -20px;
+  }
+  
+  .text-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    text-transform: uppercase;
+  }
+  
+  .first-word, .last-word {
+    color: #fff;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3), 0 3px 6px rgba(0,0,0,.08);
+  }
+  
+  .animated-words {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 18vw;
+  }
+  
+  .animated-words span {
+    color: #b1cce7;
+    font-size: 6vw;
+    position: absolute;
+    opacity: 0;
+    overflow: hidden;
+    -webkit-animation: animateWord 18s linear infinite 0s;
+    -ms-animation: animateWord 18s linear infinite 0s;
+    animation: animateWord 18s linear infinite 0s;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+  }
+  
+  .animated-words span:nth-child(2) { 
+    -webkit-animation-delay: 3s; 
+    -ms-animation-delay: 3s; 
+    animation-delay: 3s; 
+    // color: #6b7599;
+  }
+  .animated-words span:nth-child(3) { 
+    -webkit-animation-delay: 6s; 
+    -ms-animation-delay: 6s; 
+    animation-delay: 6s; 
+    // color: #85a2c0; 
+  }
+  .animated-words span:nth-child(4) { 
+    -webkit-animation-delay: 9s; 
+    -ms-animation-delay: 9s; 
+    animation-delay: 9s; 
+    // color: #80829b;
+  }
+  .animated-words span:nth-child(5) { 
+    -webkit-animation-delay: 12s; 
+    -ms-animation-delay: 12s; 
+    animation-delay: 12s; 
+    // color: #abbfd7;
+  }
+  .animated-words span:nth-child(6) { 
+    -webkit-animation-delay: 15s; 
+    -ms-animation-delay: 15s; 
+    animation-delay: 15s; 
+    color: #d5b2b6;
+  }
+  @-webkit-keyframes animateWord {
+    0% { opacity: 0; }
+    2% { opacity: 0; -webkit-transform: translateY(-30px); }
+    5% { opacity: 1; -webkit-transform: translateY(0px); }
+    17% { opacity: 1; -webkit-transform: translateY(0px); }
+    20% { opacity: 0; -webkit-transform: translateY(30px); }
+    80% { opacity: 0; }
+    100% { opacity: 0; }
+  }
+  /* General styles */
+  body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+  }
+  h1{
+    text-align:center;
+  }
+  p.{
+    font-style:italic;
+  }
+  header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+  }
+  nav li{
+    padding:90px;
+    margin:20px;
+    text-align:centre;
+  }
+  nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+  }
+  
+  nav ul li {
+      display: inline;
+      margin-right: 20px;
+  }
+  
+  nav ul li a {
+      text-decoration: none;
+      color: #fff;
+  }
+  
+  section {
+      padding: 40px;
+  }
+  
+  footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+  }
+  
+  /* About section */
+  #about {
+      background-color: #f4f4f4;
+    text-align:center;
+  }
+  
+  /* Portfolio section */
+  .project {
+      background-color: #fff;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+  }
+  
+  .project:hover {
+      transform: translateY(-5px);
+  }
+  
+  /* Contact section */
+  #contact {
+      background-color: #f4f4f4;
+  }
+   .skill-set li
+  {
+      background:rgba(0,0,0,.75);
+      border-radius:5px;
+      color:#FFF;
+      display:inline-block;
+      list-style:none;
+      margin:15px 15px 0 0;
+      padding:10px;
+      text-align:justify;
+    font-style:oblique;
+  }
+  #about p {
+    font-style: italic;
+  }
+  #contact {
+    text-align:center;
+  }h1{
+   font-family:serif;
+    font-size:30px;
+  }
+  h2{
+   font-family:serif;
+     font-size:30px;
+  }
+  #skills, #interests{
+    text-align:center;
+    font-family:serif;
+  }
+  #Qualification{
+     text-align:center;
+  }
+  div{
+    font-sixe:1.5em;
+  }
+  #reference, #Skills {
+              text-align: center;
+          }
+  #handmade{
+    font-family: 'Shadows Into Light';
+    font-size: 1.25em;
+    margin-left:5px;
+  }
+  input[type="range"]::-webkit-slider-runnable-track{
+    background-color:black;
+      cursor: pointer;
+    border-radius:30px;
+  }
